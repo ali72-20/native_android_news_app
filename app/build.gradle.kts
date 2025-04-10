@@ -2,6 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.kotlin.kapt)
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -52,7 +54,9 @@ dependencies {
     implementation (libs.retrofit)
     implementation(libs.converter.gson)
     implementation(libs.logging.interceptor)
-    implementation ("androidx.constraintlayout:constraintlayout-compose:1.0.1")
+    implementation(libs.hilt.android)
+    implementation (libs.androidx.constraintlayout.compose)
+    kapt(libs.hilt.android.compiler)
     testImplementation(libs.junit)
 
     androidTestImplementation(libs.androidx.junit)
