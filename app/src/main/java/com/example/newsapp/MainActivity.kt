@@ -19,9 +19,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.newsapp.data.api.ApiManger
-import com.example.newsapp.data.api.core.ApiConst
-import com.example.newsapp.data.models.SourceResponseModel
+import com.example.data.api.ApiManger
+import com.example.data.api.core.ApiConst
+import com.example.data.models.SourceResponseModel
 import com.example.newsapp.ui.theme.NewsAppTheme
 import retrofit2.Call
 import retrofit2.Callback
