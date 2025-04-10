@@ -34,7 +34,6 @@ class MainActivity : ComponentActivity() {
         setContent {
             NewsAppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-
                 }
             }
         }

@@ -1,10 +1,10 @@
 package com.example.domain.entities
 
-data class SourceResponseEntity(
-    val status: String?,
-    val sources: List<SourceEntity?>? = null
-)
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
 
+
+@Parcelize
 data class SourceEntity(
     val id: String?,
     val name: String?,
@@ -13,4 +13,4 @@ data class SourceEntity(
     val category: String?,
     val language: String?,
     val country: String?
-)
+):Parcelable
