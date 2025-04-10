@@ -9,7 +9,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object ApiManger {
     private var retrofit: Retrofit? = null;
-    private fun getWebServices(): WebServices {
+     fun getWebServices(): WebServices {
         val loggerInterceptor = HttpLoggingInterceptor{
             Log.e("Api manger", "Body: $it")
         }.setLevel(HttpLoggingInterceptor.Level.BODY)
